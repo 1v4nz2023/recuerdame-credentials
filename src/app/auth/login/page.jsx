@@ -35,16 +35,16 @@ function LoginPage() {
 
   return (
     <div className="h-[calc(100vh-7rem)] flex justify-center items-center">
-      <form onSubmit={onSubmit} className="w-1/4">
+      <form onSubmit={onSubmit} className="w-full mx-10 lg:w-1/4">
 
         {error && (
           <p className="bg-red-500 text-lg text-white p-3 rounded">{error}</p>
         )}
 
-        <h1 className="text-slate-200 font-bold text-4xl mb-4">
+        <h1 className="text-primary font-bold text-4xl mb-4">
           Iniciar sesión
         </h1>
-        <label htmlFor="email" className="text-white mb-2 block text-sm">
+        <label htmlFor="email" className="text-primary mb-2 block text-sm">
           Email:
         </label>
         <input
@@ -55,7 +55,7 @@ function LoginPage() {
               message: "El nombre de correo es requerido",
             },
           })}
-          className="p-3 rounded block mb-2 bg-slate-900 text-slate-300 w-full"
+          className="p-3 rounded block mb-2 bg-primary text-white w-full"
           placeholder="user@email.com"
         />
         {errors.email && (
@@ -63,7 +63,7 @@ function LoginPage() {
             {errors.email.message}
           </span>
         )}
-        <label htmlFor="password" className="text-white mb-2 block text-sm">
+        <label htmlFor="password" className="text-primary mb-2 block text-sm">
           Contraseña:
         </label>
 
@@ -75,7 +75,7 @@ function LoginPage() {
               message: "Por favor ingrese una contraseña",
             },
           })}
-          className="p-3 rounded block mb-2 bg-slate-900 text-slate-300 w-full"
+          className="p-3 rounded block mb-2 bg-primary text-white w-full"
           placeholder="********"
         />
         {errors.password && (

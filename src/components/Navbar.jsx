@@ -8,24 +8,31 @@ async function Navbar() {
   console.log(session);
 
   return (
-    <nav className="flex justify-between items-center bg-babyblue text-white px-6 py-3 md:px-24">
-      <div className="flex items-center">
+    <header className="bg-babyblue flex justify-center py-3">
+    <nav className="flex justify-center items-center  text-white py-3 md:px-24 w-[2000px]">
+      <div className="flex items-center mr-10 md:mr-auto">
         {/* Logo visible en todos los tamaños */}
-        <Image src="/logo.png" alt="alt" width={50} height={50} className="mx-2" />
+        <Image src="/logo.png" alt="alt" width={64} height={64} className="mx-2" />
 
         {/* Texto "Recuerdame" solo visible en pantallas medianas o más grandes */}
-        <h1 className="text-xl font-bold hidden md:block ">Recuerdame</h1>
+        <h1 className="text-3xl font-bold hidden md:block ">Recuerdame</h1>
       </div>
 
       {/* Enlaces de navegación, visibles solo en pantallas medianas o más grandes */}
-      <ul className="flex gap-x-2  md:flex">
+      <ul className="gap-x-8 flex flex-col lg:flex-row" >
         {!session?.user ? (
           <>
             <li>
               <Link href="/" className="hover:text-sky-100 text-[1rem] md:text-[20px]">Inicio</Link>
             </li>
             <li>
-              <Link href="/auth/login" className="hover:text-sky-100 text-[1rem] md:text-[20px]">Iniciar sesión</Link>
+              <Link href="/" className="hover:text-sky-100 text-[1rem] md:text-[20px]">Acerca de</Link>
+            </li>
+            <li>
+              <Link href="/" className="hover:text-sky-100 text-[1rem] md:text-[20px]">Contáctanos</Link>
+            </li>
+            <li className=" mt-4 mr-4 lg:mt-0 ">
+              <Link href="/auth/login" className="hover:text-sky-100 text-[1rem] md:text-[20px] bg-primary px-6 py-4 rounded-3xl">Iniciar sesión</Link>
             </li>
           </>
         ) : (
@@ -43,6 +50,7 @@ async function Navbar() {
         )}
       </ul>
     </nav>
+    </header>
   );
 }
 
