@@ -42,7 +42,11 @@ try {
         data:{
             username:data.username,
             email:data.email,
-            password:hashedPassword
+            password:hashedPassword,
+            rol:data.rol,
+            estado:data.estado,
+            nombres:data.nombres,
+            
         }
     })
 

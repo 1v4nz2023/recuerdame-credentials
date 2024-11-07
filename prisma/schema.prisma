@@ -18,8 +18,10 @@ model User {
   id Int @id @default(autoincrement())
   email String @unique
   username String @unique
+  nombres String
   password String
   rol String
+  estado String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }

@@ -154,7 +154,6 @@ const Homepage = () => {
                   src="/ico-receta.png"
                   alt="alt"
                   layout="responsive"
-
                   width={150}
                   height={90}
                 />
