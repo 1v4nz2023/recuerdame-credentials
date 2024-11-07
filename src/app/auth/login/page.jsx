@@ -42,7 +42,7 @@ function LoginPage() {
         )}
 
         <h1 className="text-primary font-bold text-4xl mb-4">
-          Iniciar sesión
+          Iniciar sesión: (Administrativo)
         </h1>
         <label htmlFor="email" className="text-primary mb-2 block text-sm">
           Email:

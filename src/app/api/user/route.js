@@ -146,3 +146,96 @@ export const DELETE = async (req) => {
 
 
 };
+
+
+      {/* <div className="w-full max-w-4xl">
+        <h1 className="text-2xl font-bold mb-6 text-center">Dashboard - Lista de Usuarios</h1>
+        <table className="w-full border-collapse">
+          <thead>
+            <tr>
+              <th className="border p-2">Email</th>
+              <th className="border p-2">Password</th>
+              <th className="border p-2">Rol</th>
+              <th className="border p-2">Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            {users.length > 0 ? (
+              users.map((user) => (
+                <tr key={user.id}>
+                  <td className="border p-2">
+                    {editingUserId === user.id ? (
+                      <input
+                        type="email"
+                        name="email"
+                        value={editedUser.email}
+                        onChange={handleInputChange}
+                        className="w-full border p-1"
+                      />
+                    ) : (
+                      user.email
+                    )}
+                  </td>
+                  <td className="border p-2">
+                    {editingUserId === user.id ? (
+                      <input
+                        type="password"
+                        name="password"
+                        value={editedUser.password}
+                        onChange={handleInputChange}
+                        className="w-full border p-1"
+                      />
+                    ) : (
+                      "********" // No mostramos la contraseña real
+                    )}
+                  </td>
+                  <td className="border p-2">
+                    {editingUserId === user.id ? (
+                      <select
+                        name="rol"
+                        value={editedUser.rol}
+                        onChange={handleInputChange}
+                        className="w-full border p-1"
+                      >
+                        <option value="admin">Administrador</option>
+                        <option value="client">Paciente</option>
+                      </select>
+                    ) : (
+                      user.rol
+                    )}
+                  </td>
+                  <td className="border p-2">
+                    {editingUserId === user.id ? (
+                      <button
+                        onClick={() => handleSaveClick(user)}
+                        className="bg-blue-500 text-white px-2 py-1 rounded"
+                      >
+                        Guardar
+                      </button>
+                    ) : (
+                      <button
+                        onClick={() => handleEditClick(user)}
+                        className="bg-gray-500 text-white px-2 py-1 rounded"
+                      >
+                        Editar
+                      </button>
+                    )}
+                  </td>
+                </tr>
+              ))
+            ) : (
+              <tr>
+                <td colSpan="4" className="text-center p-4">No hay usuarios disponibles</td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+        <div className="text-center mt-6">
+          <button
+            onClick={() => signOut()}
+            className="bg-red-500 text-white px-4 py-2 rounded"
+          >
+            Cerrar sesión
+          </button>
+        </div>
+      </div> */}
