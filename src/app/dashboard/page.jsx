@@ -41,9 +41,11 @@ const DashboardPage = () => {
     setEditingUserId(user.id);
     setEditedUser({
       username:user.username,
+      nombres:user.nombres,
       email: user.email,
       password: "",
       rol: user.rol,
+      estado:user.estado
     });
   };
 
@@ -88,8 +90,18 @@ const DashboardPage = () => {
       <UserTables users={users} handleEditClick={handleEditClick} />
 
       {editingUserId && (
-        <div className="mt-4 p-4 border border-gray-300 rounded shadow">
+        <div className="mt-4 p-4 border border-babyblue rounded shadow">
           <h2 className="text-lg font-semibold mb-4">Editar Usuario</h2>
+          <label className="block mb-2">
+            Nombres:
+            <input
+              type="text"
+              name="nombres"
+              value={editedUser.nombres}
+              onChange={handleInputChange}
+              className="border p-2 rounded w-full"
+            />
+          </label>
           <label className="block mb-2">
             Correo:
             <input
@@ -116,6 +128,16 @@ const DashboardPage = () => {
               type="text"
               name="rol"
               value={editedUser.rol}
+              onChange={handleInputChange}
+              className="border p-2 rounded w-full"
+            />
+          </label>
+          <label className="block mb-2">
+            Rol:
+            <input
+              type="text"
+              name="estado"
+              value={editedUser.estado}
               onChange={handleInputChange}
               className="border p-2 rounded w-full"
             />

@@ -41,10 +41,10 @@ async function Navbar() {
               <Link href="/dashboard" className="hover:text-sky-100">Dashboard</Link>
             </li>
             <li>
-              <Link href="/auth/register" className="hover:text-sky-100">Register</Link>
+              <Link href="/auth/register" className="hover:text-sky-100">Registrar</Link>
             </li>
             <li>
-              <Link href="/api/auth/signout" className="hover:text-sky-100">Logout</Link>
+              <Link href="/api/auth/signout" className="hover:text-sky-100">Salir</Link>
             </li>
           </>
         )}

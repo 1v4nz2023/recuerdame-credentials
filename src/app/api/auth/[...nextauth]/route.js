@@ -34,7 +34,7 @@ export const authOptions = {
 
         console.log(userFound);
         if (userFound.estado !== "activo")
-          throw new Error("Acceso denegado: es usuario no esta activo");
+          throw new Error("Acceso denegado: este usuario no esta activo");
         // Verificamos la contraseña
         const matchPassword = await bcrypt.compare(
           credentials.password,

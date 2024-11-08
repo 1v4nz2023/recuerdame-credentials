@@ -50,26 +50,14 @@ export const PUT = async (req) => {
       );
     }
 
-    // const hashedPassword = await bcrypt.hash(dataReceived.password, 10);
-    // const updateUser = await db.user.update({
-    //   where: {
-    //     username: dni,
-    //   },
-    //   data: {
-    //     email: dataReceived.email,
-    //     password: hashedPassword,
-    //     rol: dataReceived.rol,
-    //   },
-    // });
-
-    // return NextResponse.json(updateUser);
-
     const updateUserData = {
+        nombres: dataReceived.nombres,
         email: dataReceived.email,
         rol: dataReceived.rol,
+        estado: dataReceived.estado
       };
       
-      // Solo agregamos la propiedad password si dataReceived.password es válida
+      // Solo agregamos la propiedad password si dataReceived.password5  es válida
       if (dataReceived.password) {
         updateUserData.password = await bcrypt.hash(dataReceived.password, 10);
       }

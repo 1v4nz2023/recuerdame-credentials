@@ -118,7 +118,7 @@ export const UserTables = ({ users, handleEditClick }) => {
       </label>
       <input
         type="text"
-        className="p-3 rounded block mb-2 border-2 border-rose-600 text-black w-1/4 my-4"
+        className="p-3 rounded block mb-2 border-2 border-babyblue text-black w-1/4 my-4"
         onChange={handleChange}
       />
       {!loading && records.length > 0 ? (
