@@ -10,6 +10,7 @@ const DashboardPage = () => {
     email: "",
     password: "",
     rol: "",
+    estado:"",
   });
 
   // Obtener todos los usuarios al cargar el componente
@@ -40,12 +41,12 @@ const DashboardPage = () => {
   const handleEditClick = (user) => {
     setEditingUserId(user.id);
     setEditedUser({
-      username:user.username,
-      nombres:user.nombres,
+      username: user.username,
+      nombres: user.nombres,
       email: user.email,
       password: "",
       rol: user.rol,
-      estado:user.estado
+      estado: user.estado,
     });
   };
 
@@ -74,7 +75,10 @@ const DashboardPage = () => {
             const errorData = JSON.parse(errorText);
             console.error("Error updating user:", errorData.message);
           } catch (e) {
-            console.error("Error updating user, but response is not in JSON format:", errorText);
+            console.error(
+              "Error updating user, but response is not in JSON format:",
+              errorText
+            );
           }
         } else {
           console.error("Error updating user, no content in response.");
@@ -124,24 +128,29 @@ const DashboardPage = () => {
           </label>
           <label className="block mb-2">
             Rol:
-            <input
-              type="text"
+            <select
               name="rol"
               value={editedUser.rol}
               onChange={handleInputChange}
               className="border p-2 rounded w-full"
-            />
+            >
+              <option value="admin">Administrador</option>
+              <option value="client">Paciente</option>
+            </select>
           </label>
           <label className="block mb-2">
-            Rol:
-            <input
-              type="text"
+            Estado:
+            <select
               name="estado"
               value={editedUser.estado}
               onChange={handleInputChange}
               className="border p-2 rounded w-full"
-            />
+            >
+              <option value="activo">Activo</option>
+              <option value="inactivo">Inactivo</option>
+            </select>
           </label>
+
           <button
             onClick={handleSaveClick}
             className="bg-babyblue hover:bg-blue-300 text-white p-2 rounded mt-2"

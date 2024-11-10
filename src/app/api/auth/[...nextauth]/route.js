@@ -31,7 +31,6 @@ export const authOptions = {
 
         // Si no encuentra el usuario, lanzamos un error
         if (!userFound) throw new Error("Usuario no encontrado");
-
         console.log(userFound);
         if (userFound.estado !== "activo")
           throw new Error("Acceso denegado: este usuario no esta activo");

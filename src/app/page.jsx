@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-Link;
+import { Demo } from "@/components/Demo";
 const Homepage = () => {
   return (
     <main className="justify-center mx-auto min-h-[100vh]">
@@ -30,23 +30,14 @@ const Homepage = () => {
                 <h2 className=" text-[2rem] xl:text-[3.5rem] text-center font-bold text-primary mb-5">
                   ¿Olvidaste tomar tus medicamentos?
                 </h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Sapiente accusamus voluptates eius fuga optio? Vitae obcaecati
-                  quasi non. Vitae fugit voluptatum quas quae id error. Nam
-                  reiciendis cumque sint dolorum.
+                <p className="text-[1rem] xl:text-[1.5rem] my-5">
+                Con Recuerdame, nunca más te preocupes por olvidar tus medicamentos. Nuestro aplicativo te permite subir tus recetas médicas y programar tus dosis, enviándote notificaciones puntuales para cada toma.
                 </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Sapiente accusamus voluptates eius fuga optio? Vitae obcaecati
-                  quasi non. Vitae fugit voluptatum quas quae id error. Nam
-                  reiciendis cumque sint dolorum.
+                <p className="text-[1rem] xl:text-[1.5rem] my-5">
+                Además, es colaborativo: puedes añadir a familiares o amigos para que ellos también reciban alertas y te ayuden a recordar tus dosis importantes. Simplifica el manejo de tus tratamientos y cuida de tu salud de manera más segura y acompañada.
                 </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Sapiente accusamus voluptates eius fuga optio? Vitae obcaecati
-                  quasi non. Vitae fugit voluptatum quas quae id error. Nam
-                  reiciendis cumque sint dolorum.
+                <p className="text-[1rem] xl:text-[1.2rem] my-5">
+                Disponible en dispositivos Android y iOS
                 </p>
                 <div className="flex flex-col lg:flex-row items-center justify-center mt-10">
                   <div>
@@ -71,9 +62,9 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-
+          <Demo/>
       <section>
-        <h2 className=" text-[2rem] xl:text-[3.5rem] text-center text-primary font-bold mb-5">
+        <h2 className=" text-[2rem] xl:text-[3.5rem] text-center text-primary font-bold my-10">
           Beneficios
         </h2>
         <p className="text-center text-1xl xl:text-3xl mb-5">
@@ -83,143 +74,83 @@ const Homepage = () => {
           <div className="card__beneficios shadow-xl mr-0 xl:mr-5">
             <div>
               <div className="card__header">
-                <h3>TITTLE</h3>
+                <h3 className="mb-5">Soporte Colaborativo</h3>
               </div>
               <div className="card__body">
                 <Image
                   className="mx-auto mb-5"
                   src="/ico-comunidad.png"
                   alt="alt"
-                  layout="responsive"
-                  width={200}
+                  width={150}
                   height={90}
                 />
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maxime explicabo iusto
-                </p>
+                Con Recuerdame, puedes agregar a familiares o amigos para que te ayuden a recordar tus medicamentos en caso de que te olvides.
+               </p>
               </div>
             </div>
           </div>
           <div className="card__beneficios shadow-xl mr-0 xl:mr-5">
             <div>
               <div className="card__header">
-                <h3>TITTLE</h3>
+                <h3 className="mb-5">Notificaciones de Dosis
+                </h3>
               </div>
               <div className="card__body">
                 <Image
                   className="mx-auto mb-5"
                   src="/ico-reloj.png"
                   alt="alt"
-                  layout="responsive"
                   width={150}
                   height={90}
                 />
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maxime explicabo iusto
-                </p>
+                Recibe recordatorios puntuales para cada dosis programada, asegurándote de que nunca más olvides tomar tus medicamentos.
+              </p>
               </div>
             </div>
           </div>
           <div className="card__beneficios shadow-xl mr-0 xl:mr-5">
             <div>
               <div className="card__header">
-                <h3>TITTLE</h3>
+                <h3 className="mb-5">Alertas Personalizadas</h3>
               </div>
               <div className="card__body">
                 <Image
                   className="mx-auto mb-5"
                   src="/ico-alarma.png"
                   alt="alt"
-                  layout="responsive"
                   width={150}
                   height={90}
                 />
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                explicabo iusto
+              Configura las notificaciones según tus necesidades y preferencias, con la tranquilidad de recibir un aviso cuando sea el momento.
               </p>
             </div>
           </div>
           <div className="card__beneficios shadow-xl mr-0 xl:mr-5">
             <div>
               <div className="card__header">
-                <h3>TITTLE</h3>
+                <h3 className="mb-5">Gestión de Recetas
+                </h3>
               </div>
               <div className="card__body">
                 <Image
                   className="mx-auto mb-5"
                   src="/ico-receta.png"
                   alt="alt"
-                  layout="responsive"
                   width={150}
                   height={90}
                 />
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maxime explicabo iusto
+                Guarda y organiza todas tus recetas en un solo lugar, para un acceso fácil y seguro cuando lo necesites.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      {/* <section className="grid grid-cols-2 gap-4 m-2">
-        <div className="p-6 border  bg-babyblue border-babyblue rounded-[12px] flex flex-col gap-1 col-span-1 row-span-1 justify-center items-center hover:bg-secondary">
-          <span className="text-[1rem] md:text-[2rem] text-white py-2">
-            Descarga la app
-          </span>
-          <Link
-            href="https://play.google.com/store/games?hl=es_419&pli=1"
-            target="_blank"
-          >
-            <Image
-              src="/stores.jpg"
-              alt="tiendas"
-              width={350}
-              height={100}
-              className="rounded-md"
-            />
-          </Link>
-        </div>
-        <div className="p-6 border  bg-babyblue border-babyblue rounded-[12px] flex flex-col gap-1 col-span-1 row-span-1 justify-center items-center  hover:bg-secondary">
-          <span className="text-[1rem] md:text-[2rem] text-white py-2">
-            ¿Necesitas ayuda?
-          </span>
-          <Link href="https://wa.me/51933298821" target="_blank">
-            <Image
-              src="/wsp.png"
-              alt="locales"
-              layout="fit"
-              width={200}
-              height={200}
-              className="rounded-md"
-            />
-          </Link>
-        </div>
-
-        <div className="p-6 border  bg-babyblue border-babyblue rounded-[12px] flex flex-col gap-1 col-span-2 row-span-1  hover:bg-secondary">
-          <span className="text-[1rem] md:text-[2rem] text-white py-2">
-            Servicios
-          </span>
-          <Link
-            href="https://web.sisol.gob.pe/donde-me-atiendo/"
-            target="_blank"
-          >
-            <Image
-              src="/servicios.png"
-              alt="servicios"
-              layout="responsive"
-              width={800}
-              height={800}
-              className="rounded-md"
-            />
-          </Link>
-        </div>
-      </section> */}
     </main>
   );
 };
