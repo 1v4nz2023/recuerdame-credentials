@@ -40,7 +40,7 @@ export const UserTables = ({ users, handleEditClick }) => {
     {
       name: "Acción",
       cell: (row) => (
-        <button onClick={() => handleEditClick(row)} className="text-white bg-babyblue rounded-md py-2 px-4 my-1 hover:bg-blue-400">
+        <button onClick={() => handleEditClick(row)} className="text-white bg-babyblue rounded-md py-2 px-2 my-1 hover:bg-blue-400">
           Editar
         </button>
       ),

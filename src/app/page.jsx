@@ -11,7 +11,6 @@ const Homepage = () => {
               <Image
                 src="/bg-portada.png"
                 alt="alt"
-                layout="cover"
                 width={1920}
                 height={1080}
               />
@@ -44,16 +43,20 @@ const Homepage = () => {
                     <Image
                       src="/btn-playstore.png"
                       alt="alt"
-                      width={196}
-                      height={128}
+                      width={5920}
+                      height={2064}
+                      className="w-full max-w-[200px] sm:max-w-[360px]"
+
                     />
                   </div>
                   <div>
                     <Image
                       src="/btn-appstore.png"
                       alt="alt"
-                      width={196}
-                      height={128}
+                      width={5920}
+                      height={2064}
+                      className="w-full max-w-[200px] sm:max-w-[360px]"
+
                     />
                   </div>
                 </div>
@@ -63,14 +66,14 @@ const Homepage = () => {
         </div>
       </section>
           <Demo/>
-      <section>
+      <section className="my-20">
         <h2 className=" text-[2rem] xl:text-[3.5rem] text-center text-primary font-bold my-10">
           Beneficios
         </h2>
         <p className="text-center text-1xl xl:text-3xl mb-5">
           Conoce los beneficios que tendrás con nuestra app!
         </p>
-        <div className="grid grid-cols-1 w-[300px] justify-center mx-auto xl:grid-cols-4 xl:w-[1200px]">
+        <div className="grid grid-cols-1 w-[300px] justify-center mx-auto xl:grid-cols-4 xl:w-[1200px] ">
           <div className="card__beneficios shadow-xl mr-0 xl:mr-5">
             <div>
               <div className="card__header">
@@ -78,11 +81,12 @@ const Homepage = () => {
               </div>
               <div className="card__body">
                 <Image
-                  className="mx-auto mb-5"
+                  className="w-full max-w-[150px] sm:max-w-[360px] mx-auto mb-5"
                   src="/ico-comunidad.png"
                   alt="alt"
-                  width={150}
-                  height={90}
+                  width={1920}
+                  height={1080}
+                  
                 />
                 <p>
                 Con Recuerdame, puedes agregar a familiares o amigos para que te ayuden a recordar tus medicamentos en caso de que te olvides.
@@ -98,11 +102,11 @@ const Homepage = () => {
               </div>
               <div className="card__body">
                 <Image
-                  className="mx-auto mb-5"
+                  className="w-full max-w-[150px] sm:max-w-[360px] mx-auto mb-5"
                   src="/ico-reloj.png"
                   alt="alt"
-                  width={150}
-                  height={90}
+                  width={1920}
+                  height={1080}
                 />
                 <p>
                 Recibe recordatorios puntuales para cada dosis programada, asegurándote de que nunca más olvides tomar tus medicamentos.
@@ -117,11 +121,11 @@ const Homepage = () => {
               </div>
               <div className="card__body">
                 <Image
-                  className="mx-auto mb-5"
+                  className="w-full max-w-[150px] sm:max-w-[360px] mx-auto mb-5"
                   src="/ico-alarma.png"
                   alt="alt"
-                  width={150}
-                  height={90}
+                  width={1920}
+                  height={1080}
                 />
               </div>
               <p>
@@ -137,11 +141,11 @@ const Homepage = () => {
               </div>
               <div className="card__body">
                 <Image
-                  className="mx-auto mb-5"
+                  className="w-full max-w-[150px] sm:max-w-[360px] mx-auto mb-5"
                   src="/ico-receta.png"
                   alt="alt"
-                  width={150}
-                  height={90}
+                  width={1920}
+                  height={1080}
                 />
                 <p>
                 Guarda y organiza todas tus recetas en un solo lugar, para un acceso fácil y seguro cuando lo necesites.
