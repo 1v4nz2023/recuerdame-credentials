@@ -11,9 +11,9 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
-  url      = env("DATABASE_URL")
-  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+  provider = "postgresql"
+  url      = "mysql://proy2f_recuerdame:Certus2024@162.241.123.17:3306/proy2f_recuerdame"
+  shadowDatabaseUrl = "mysql://proy2f_recuerdame:Certus2024@162.241.123.17:3306/proy2f_recuerdame_shadow"
 }
 
 model User {
