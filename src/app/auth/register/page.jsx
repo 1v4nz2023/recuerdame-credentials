@@ -38,8 +38,8 @@ function RegisterPage() {
 
   console.log(errors);
   return (
-    <div className="h-[100vh] xll:h-[calc(100vh-7rem)] flex justify-center items-center">
-      <form onSubmit={onSubmit} className="w-1/4">
+    <div className="h-[100vh] flex justify-center items-center">
+      <form onSubmit={onSubmit} className="w-1/2 xl:w-1/4">
         <h1 className=" text-primary font-bold text-2xl xl:text-4xl mb-4">Registrar</h1>
         <label htmlFor="username" className="text-slate-500 mb-2 block text-sm">
           DNI de usuario:

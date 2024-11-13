@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+
 export const Demo = () => {
   return (
     <section className="bg-babyblue mt-2 pt-1 pb-10">
@@ -40,9 +41,7 @@ export const Demo = () => {
         </div>
       </div>
       </div>
-
-
-
     </section>
   );
 };
+
