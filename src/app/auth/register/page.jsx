@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
+import Swal from 'sweetalert2'
 
 function RegisterPage() {
   const {
@@ -13,7 +14,12 @@ function RegisterPage() {
 
   const onSubmit = handleSubmit(async (data) => {
     if (data.password !== data.confirmPassword) {
-      return alert("Contraseñas no coinciden");
+      return Swal.fire({
+        title: 'Error de registro',
+        text: 'Las contraseñas no coinciden',
+        icon: 'error',
+        confirmButtonText: 'OK'
+      });
     }
 
     const res = await fetch("/api/auth/register", {
