@@ -54,7 +54,7 @@ function RegisterPage() {
       }
 
       // Segunda solicitud al API externo0
-      const resExternal = await fetch("https://proyectosawscertus2025.lat/api/users", {
+      const resExternal = await fetch("https://proyectosawscertus2025.lat/api/user", {
         method: "POST",
         body: JSON.stringify(requestBody),
         headers: {
