@@ -30,7 +30,7 @@ const Homepage = () => {
                   ¿Olvidaste tomar tus medicamentos?
                 </h2>
                 <p className="text-[1rem] xl:text-[1.5rem] my-5">
-                Con Recuerdame, nunca más te preocupes por olvidar tus medicamentos. Nuestro aplicativo te permite subir tus recetas médicas y programar tus dosis, enviándote notificaciones puntuales para cada toma.
+                Con Recuerdame fase beta part 1, nunca más te preocupes por olvidar tus medicamentos. Nuestro aplicativo te permite subir tus recetas médicas y programar tus dosis, enviándote notificaciones puntuales para cada toma.
                 </p>
                 <p className="text-[1rem] xl:text-[1.5rem] my-5">
                 Además, es colaborativo: puedes añadir a familiares o amigos para que ellos también reciban alertas y te ayuden a recordar tus dosis importantes. Simplifica el manejo de tus tratamientos y cuida de tu salud de manera más segura y acompañada.
